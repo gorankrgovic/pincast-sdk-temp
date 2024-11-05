@@ -1,0 +1,35 @@
+{
+  "name": "pincast-sdk",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "audio",
+    "sdk",
+    "recording",
+    "pincast",
+    "typescript"
+  ],
+  "author": "Pincast",
+  "license": "MIT",
+  "description": "An open-source SDK for the Pincast platform, including audio recording and content handling modules for building interactive location-based audio experiences.",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.8.7",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.685.0",
+    "@azure/storage-blob": "^12.25.0"
+  }
+}
